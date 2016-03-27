@@ -4,7 +4,13 @@ from __future__ import division
 from flask import Flask, request, render_template,jsonify
 from goose import Goose
 import re, urllib2
-from nltk import tokenize
+
+
+# This is a web application that allows the user to pass in a URL and return a summarized article
+# including the title and an image if any. 
+# This program uses a summarizer algorithm that extracts the key sentence from each paragraph in the text
+# and it usually cuts articles, blogs, news reports around 60-70% of the original text
+# This program also uses the Goose API that extracts contents from a URL.
 
 app = Flask(__name__)
  
@@ -24,17 +30,12 @@ def extract():
 	st = SummaryTool()
 	sentences_dic = st.get_sentences_ranks(content)
 	summary = st.get_summary(title, content, sentences_dic)
-	"""if article is not None:
-		if article.top_image is not None:
-			response = {'title' : article.title , 'text' : summary,'image': article.top_image.src}
-			return jsonify(response)
-		response = {'title' : article.title , 'text' : summary,'image': 'default image'}
-	return jsonify(response)
-	"""
+
 	if article.top_image == None:
 		response = {'title' : article.title , 'text' : summary, 'image' : ''}
 		return jsonify(response)
 	response = {'title' : article.title , 'text' : summary,'image': article.top_image.src}
+
 	return jsonify(response)
 
  
@@ -51,8 +52,7 @@ def summarize():
 # This is a naive text summarization algorithm
 # Created by Shlomi Babluki
 # April, 2013
-
-
+	
 class SummaryTool(object):
 
     # Naive method for splitting a text into sentences
