@@ -9,6 +9,10 @@ This program also uses the Goose API that extracts contents from a URL.
 Installation
 ------------
 
+First you need to pull this repository to your computer
+
+	$ git clone https://github.com/sxm6616/article-summarizer.git
+
 We need to install Python 2.7 and Virtualenv on the machine.
 We will then need to install the Goose Extractor and Flask framework
 
