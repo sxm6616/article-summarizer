@@ -33,4 +33,9 @@ Then open your browser and type in:
 	
 	$ http://127.0.0.1:5000/
 	
+![screenshot one](https://github.com/sxm6616/article-summarizer/blob/master/Screenshots/Screenshot%20from%202016-03-27%2002:17:28.png)
+
+![screenshot two](https://github.com/sxm6616/article-summarizer/blob/master/Screenshots/Screenshot%20from%202016-03-27%2002:17:42.png)
+
+![screenshot three](https://github.com/sxm6616/article-summarizer/blob/master/Screenshots/Screenshot%20from%202016-03-27%2002:20:33.png)
 
