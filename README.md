@@ -1,7 +1,10 @@
 Article Summarizer
 ==================
 
-A simple Flask web application that allows the user to pass in a URL and return a summarized article
+A simple Flask web application that allows the user to pass in a URL and return a summarized article. 
+This program uses a summarizer algorithm that extracts the key sentence from each paragraph in the text
+and it usually cuts articles, blogs, news reports around 60-70% of the original text.
+This program also uses the Goose API that extracts contents from a URL.
 
 Installation
 ------------
