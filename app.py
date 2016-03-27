@@ -7,7 +7,9 @@ import re, urllib2
 
 
 # This is a web application that allows the user to pass in a URL and return a summarized article
-# including the title and an image if any. 
+# Created by Sergio Molina
+# March 2016
+ 
 # This program uses a summarizer algorithm that extracts the key sentence from each paragraph in the text
 # and it usually cuts articles, blogs, news reports around 60-70% of the original text
 # This program also uses the Goose API that extracts contents from a URL.
